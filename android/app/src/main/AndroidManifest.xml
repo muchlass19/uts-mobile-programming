@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.uts_mobile">
    <application
-        android:label="uts_mobile"
+        android:label="Muchlas - 201011401978"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
