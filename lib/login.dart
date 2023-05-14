@@ -26,7 +26,8 @@ class _LoginState extends State<Login> {
             _textboxID(),
             _textboxPassword(),
             _tombolLogin(),
-            _userlogin()
+            _userlogin(),
+            _muchlasSyahlanisyiam()
           ],
         ),
       ),
@@ -43,6 +44,7 @@ class _LoginState extends State<Login> {
 
   _textboxPassword() {
     return TextField(
+      obscureText: true,
       decoration: const InputDecoration(
           labelText: "Password", contentPadding: EdgeInsets.all(12)),
       controller: _PasswordTextboxController,
@@ -88,6 +90,19 @@ class _LoginState extends State<Login> {
   }
 
   _userlogin() {
-    return const Text("ID: admin\nPassword: admin");
+    return Column(
+      children: [Text("ID: admin"), Text("Password: admin")],
+    );
+  }
+
+  _muchlasSyahlanisyiam() {
+    return Column(
+      children: [
+        Text("\n"),
+        Text("Nama: Muchlas Syahlanisyiam"),
+        Text("NIM: 201011401978"),
+        Text("Kelas: 06TPLE004")
+      ],
+    );
   }
 }
